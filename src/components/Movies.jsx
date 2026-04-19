@@ -1,6 +1,6 @@
 
-import React, { useState } from "react";
- import meridaImg from '../assets/merida.jfif'
+import { useState } from "react";
+import meridaImg from '../assets/merida.jfif'
 import moanaImg from '../assets/moana.jfif'
 import soulImg from '../assets/soul.jfif'
 import wolfImg from '../assets/wolf.jfif'
@@ -53,7 +53,7 @@ import wolfImg from '../assets/wolf.jfif'
                       ? "btn-secondary" 
                       : movie.tiket < 2
                       ? "btn-danger" 
-                      : movie.tiket <= 4
+                      : movie.tiket < 5
                       ? "btn-warning" 
                       : "btn-success"
                   }`}
